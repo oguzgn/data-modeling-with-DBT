@@ -1,0 +1,2414 @@
+[0m18:32:46.805374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8bef40c800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8befc9bad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8bf0438620>]}
+
+
+============================== 18:32:46.809260 | 85e5e807-9bbb-4c95-ac0e-0313df1f366a ==============================
+[0m18:32:46.809260 [info ] [MainThread]: Running with dbt=1.8.1
+[0m18:32:46.813294 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'profiles_dir': '/home/coder/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:47.076607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85e5e807-9bbb-4c95-ac0e-0313df1f366a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8beeec0770>]}
+[0m18:32:47.097752 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-2sejx5lk'
+[0m18:32:47.098437 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m18:32:47.135942 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m18:32:47.136878 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m18:32:47.172954 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m18:32:47.180042 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m18:32:47.200368 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m18:32:47.201186 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `calogica/dbt_date` package is deprecated in favor of
+`godatadriven/dbt_date`. Please update your `packages.yml` configuration to use
+`godatadriven/dbt_date` instead.
+[0m18:32:47.205700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '85e5e807-9bbb-4c95-ac0e-0313df1f366a', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8befb7a180>]}
+[0m18:32:47.230046 [info ] [MainThread]: Updating lock file in file path: /home/coder/project/classicmodels_modeling/package-lock.yml
+[0m18:32:47.241760 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-_4mln8h_'
+[0m18:32:47.246806 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m18:32:52.545448 [info ] [MainThread]: Installed from version 1.2.0
+[0m18:32:52.547793 [info ] [MainThread]: Updated version available: 1.3.0
+[0m18:32:52.552241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '85e5e807-9bbb-4c95-ac0e-0313df1f366a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8beea13890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8bee653170>]}
+[0m18:32:52.556747 [info ] [MainThread]: Installing calogica/dbt_date
+[0m18:32:54.211632 [info ] [MainThread]: Installed from version 0.9.2
+[0m18:32:54.212143 [info ] [MainThread]: Updated version available: 0.10.1
+[0m18:32:54.212543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '85e5e807-9bbb-4c95-ac0e-0313df1f366a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8beefc46b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8befb79a60>]}
+[0m18:32:54.212953 [info ] [MainThread]: 
+[0m18:32:54.213326 [info ] [MainThread]: Updates available for packages: ['dbt-labs/dbt_utils', 'calogica/dbt_date']                 
+Update your versions in packages.yml, then run dbt deps
+[0m18:32:54.214737 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 7.532112, "process_user_time": 1.654381, "process_kernel_time": 0.215008, "process_mem_max_rss": "87456", "process_in_blocks": "37459", "process_out_blocks": "3177"}
+[0m18:32:54.226030 [debug] [MainThread]: Command `dbt deps` succeeded at 18:32:54.225828 after 7.54 seconds
+[0m18:32:54.231906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8beeca3b30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8bef2e5340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d8beea13890>]}
+[0m18:32:54.237903 [debug] [MainThread]: Flushing usage events
+[0m18:37:09.081203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfdfc1f050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfdf0dc7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfdef4f7a0>]}
+
+
+============================== 18:37:09.084444 | 9dad1c6d-ab64-47ba-bd82-67159935d410 ==============================
+[0m18:37:09.084444 [info ] [MainThread]: Running with dbt=1.8.1
+[0m18:37:09.090537 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/coder/.dbt', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:37:09.107736 [info ] [MainThread]: dbt version: 1.8.1
+[0m18:37:09.108157 [info ] [MainThread]: python version: 3.12.7
+[0m18:37:09.114315 [info ] [MainThread]: python path: /home/coder/miniconda/bin/python
+[0m18:37:09.120476 [info ] [MainThread]: os info: Linux-6.5.0-1020-aws-x86_64-with-glibc2.35
+[0m18:37:09.253327 [info ] [MainThread]: Using profiles dir at /home/coder/.dbt
+[0m18:37:09.253849 [info ] [MainThread]: Using profiles.yml file at /home/coder/.dbt/profiles.yml
+[0m18:37:09.260709 [info ] [MainThread]: Using dbt_project.yml file at /home/coder/project/classicmodels_modeling/dbt_project.yml
+[0m18:37:09.267652 [info ] [MainThread]: adapter type: postgres
+[0m18:37:09.273791 [info ] [MainThread]: adapter version: 1.8.1
+[0m18:37:09.459132 [info ] [MainThread]: Configuration:
+[0m18:37:09.459631 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:37:09.466429 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:37:09.473212 [info ] [MainThread]: Required dependencies:
+[0m18:37:09.479565 [debug] [MainThread]: Executing "git --help"
+[0m18:37:09.494905 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:37:09.495428 [debug] [MainThread]: STDERR: "b''"
+[0m18:37:09.509535 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:37:09.517325 [info ] [MainThread]: Connection:
+[0m18:37:09.525146 [info ] [MainThread]:   host: de-c4w1a1-rds.c1u26s4g4tzz.us-east-1.rds.amazonaws.com
+[0m18:37:09.532982 [info ] [MainThread]:   port: 5432
+[0m18:37:09.540909 [info ] [MainThread]:   user: postgresuser
+[0m18:37:09.548451 [info ] [MainThread]:   database: postgres
+[0m18:37:09.556338 [info ] [MainThread]:   schema: classicmodels
+[0m18:37:09.564373 [info ] [MainThread]:   connect_timeout: 10
+[0m18:37:09.572541 [info ] [MainThread]:   role: None
+[0m18:37:09.580656 [info ] [MainThread]:   search_path: None
+[0m18:37:09.589984 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:37:09.597648 [info ] [MainThread]:   sslmode: None
+[0m18:37:09.605312 [info ] [MainThread]:   sslcert: None
+[0m18:37:09.612902 [info ] [MainThread]:   sslkey: None
+[0m18:37:09.620707 [info ] [MainThread]:   sslrootcert: None
+[0m18:37:09.628637 [info ] [MainThread]:   application_name: dbt
+[0m18:37:09.636914 [info ] [MainThread]:   retries: 1
+[0m18:37:09.645129 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m18:37:09.861792 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:37:09.955096 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:37:09.955561 [debug] [MainThread]: On debug: select 1 as id
+[0m18:37:09.964096 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:37:10.041347 [debug] [MainThread]: SQL status: SELECT 1 in 0.077 seconds
+[0m18:37:10.042519 [debug] [MainThread]: On debug: Close
+[0m18:37:10.050306 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:37:10.057893 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:37:10.066343 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.1922626, "process_user_time": 1.618126, "process_kernel_time": 0.180645, "process_mem_max_rss": "95748", "process_in_blocks": "39309", "process_out_blocks": "368"}
+[0m18:37:10.073887 [debug] [MainThread]: Command `dbt debug` succeeded at 18:37:10.073724 after 1.20 seconds
+[0m18:37:10.081709 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:37:10.093828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfe25530b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfdebb8950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77bfdeb62510>]}
+[0m18:37:10.100439 [debug] [MainThread]: Flushing usage events
+[0m19:04:05.066746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabfb491f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dac2a45160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dac03d8d40>]}
+
+
+============================== 19:04:05.070015 | d4b16081-8bbb-43a6-8cf7-10cd34be46cf ==============================
+[0m19:04:05.070015 [info ] [MainThread]: Running with dbt=1.8.1
+[0m19:04:05.076902 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/coder/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run -s star_schema', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:04:05.484802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabf957170>]}
+[0m19:04:05.664142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dac08dac30>]}
+[0m19:04:05.665044 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m19:04:05.928428 [debug] [MainThread]: checksum: ebc509fb14e151ea268e89b60fd5abf912ed99129f87516462718fa2f14f4838, vars: {}, profile: , target: , version: 1.8.1
+[0m19:04:05.936316 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:04:05.936784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabf957bc0>]}
+[0m19:04:10.321761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabed82510>]}
+[0m19:04:10.541577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabea6b560>]}
+[0m19:04:10.542245 [info ] [MainThread]: Found 7 models, 4 data tests, 664 macros
+[0m19:04:10.548615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabe9e6600>]}
+[0m19:04:10.557692 [info ] [MainThread]: 
+[0m19:04:10.561623 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:04:10.572324 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m19:04:10.607229 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m19:04:10.607706 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:04:10.614828 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:04:10.665937 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.051 seconds
+[0m19:04:10.667516 [debug] [ThreadPool]: On list_postgres: Close
+[0m19:04:10.675203 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now create_postgres_classicmodels_star_schema)
+[0m19:04:10.681777 [debug] [ThreadPool]: Creating schema "database: "postgres"
+schema: "classicmodels_star_schema"
+"
+[0m19:04:10.695273 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_star_schema"
+[0m19:04:10.696633 [debug] [ThreadPool]: On create_postgres_classicmodels_star_schema: BEGIN
+[0m19:04:10.703196 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:04:10.753245 [debug] [ThreadPool]: SQL status: BEGIN in 0.050 seconds
+[0m19:04:10.753721 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_star_schema"
+[0m19:04:10.760269 [debug] [ThreadPool]: On create_postgres_classicmodels_star_schema: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "create_postgres_classicmodels_star_schema"} */
+create schema if not exists "classicmodels_star_schema"
+[0m19:04:10.770583 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.003 seconds
+[0m19:04:10.774211 [debug] [ThreadPool]: On create_postgres_classicmodels_star_schema: COMMIT
+[0m19:04:10.780635 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_star_schema"
+[0m19:04:10.787204 [debug] [ThreadPool]: On create_postgres_classicmodels_star_schema: COMMIT
+[0m19:04:10.797363 [debug] [ThreadPool]: SQL status: COMMIT in 0.003 seconds
+[0m19:04:10.801114 [debug] [ThreadPool]: On create_postgres_classicmodels_star_schema: Close
+[0m19:04:10.809208 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_postgres_classicmodels_star_schema, now list_postgres_classicmodels_star_schema)
+[0m19:04:10.821050 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:04:10.821429 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: BEGIN
+[0m19:04:10.827787 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:04:10.879016 [debug] [ThreadPool]: SQL status: BEGIN in 0.051 seconds
+[0m19:04:10.879485 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:04:10.886387 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_star_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_star_schema'
+  
+[0m19:04:10.898856 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.006 seconds
+[0m19:04:10.900379 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: ROLLBACK
+[0m19:04:10.908581 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: Close
+[0m19:04:10.917984 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:10.919490 [debug] [MainThread]: On master: BEGIN
+[0m19:04:10.928809 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:04:10.988669 [debug] [MainThread]: SQL status: BEGIN in 0.060 seconds
+[0m19:04:10.989338 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:10.996633 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:04:11.010386 [debug] [MainThread]: SQL status: SELECT 0 in 0.007 seconds
+[0m19:04:11.012466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabea49a30>]}
+[0m19:04:11.017505 [debug] [MainThread]: On master: ROLLBACK
+[0m19:04:11.032552 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:11.033169 [debug] [MainThread]: On master: BEGIN
+[0m19:04:11.044845 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m19:04:11.048589 [debug] [MainThread]: On master: COMMIT
+[0m19:04:11.057175 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:11.063931 [debug] [MainThread]: On master: COMMIT
+[0m19:04:11.072998 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:04:11.078043 [debug] [MainThread]: On master: Close
+[0m19:04:11.085718 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:04:11.092294 [info ] [MainThread]: 
+[0m19:04:11.107540 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dates
+[0m19:04:11.108988 [info ] [Thread-1 (]: 1 of 7 START sql table model classicmodels_star_schema.dates ................... [RUN]
+[0m19:04:11.116854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_star_schema, now model.classicmodels_modeling.dates)
+[0m19:04:11.125624 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dates
+[0m19:04:11.160898 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.161823 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: BEGIN
+[0m19:04:11.168388 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:11.226065 [debug] [Thread-1 (]: SQL status: BEGIN in 0.058 seconds
+[0m19:04:11.226751 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.233939 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+
+
+        select 
+        ((cast('2005-12-31' as timestamp))::date - (cast('2003-01-01' as timestamp))::date)
+    
+[0m19:04:11.245095 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.004 seconds
+[0m19:04:11.264082 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dates"
+[0m19:04:11.312328 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dates
+[0m19:04:11.375846 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dates"
+[0m19:04:11.424399 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.425177 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dates__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+    
+with base_dates as (
+    
+    with date_spine as
+(
+
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 1095
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    cast('2003-01-01' as timestamp) + ((interval '1 day') * ((row_number() over (order by 1) - 1)))
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2005-12-31' as timestamp)
+
+)
+
+select * from filtered
+
+
+
+)
+select
+    cast(d.date_day as timestamp) as date_day
+from
+    date_spine d
+
+
+),
+dates_with_prior_year_dates as (
+
+    select
+        cast(d.date_day as date) as date_day,
+        cast(
+
+    d.date_day + ((interval '1 year') * (-1))
+
+ as date) as prior_year_date_day,
+        cast(
+
+    d.date_day + ((interval '1 day') * (-364))
+
+ as date) as prior_year_over_year_date_day
+    from
+    	base_dates d
+
+)
+select
+    d.date_day,
+    cast(
+
+    d.date_day + ((interval '1 day') * (-1))
+
+ as date) as prior_date_day,
+    cast(
+
+    d.date_day + ((interval '1 day') * (1))
+
+ as date) as next_date_day,
+    d.prior_year_date_day as prior_year_date_day,
+    d.prior_year_over_year_date_day,
+    -- Monday(1) to Sunday (7)
+        cast(date_part('isodow', d.date_day) as integer) as day_of_week,
+
+    to_char(d.date_day, 'FMDay') as day_of_week_name,
+    to_char(d.date_day, 'FMDy') as day_of_week_name_short,
+    date_part('day', d.date_day) as day_of_month,
+    date_part('doy', d.date_day) as day_of_year,
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) as week_start_date,
+    cast(
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) + ((interval '1 day') * (6))
+
+ as date) as week_end_date,
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.prior_year_over_year_date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) as prior_year_week_start_date,
+    cast(
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.prior_year_over_year_date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) + ((interval '1 day') * (6))
+
+ as date) as prior_year_week_end_date,
+    
+cast(to_char(d.date_day, 'WW') as integer) as week_of_year,
+
+    cast(date_trunc('week', d.date_day) as date) as iso_week_start_date,
+    cast(
+
+    cast(date_trunc('week', d.date_day) as date) + ((interval '1 day') * (6))
+
+ as date) as iso_week_end_date,
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) as prior_year_iso_week_start_date,
+    cast(
+
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) + ((interval '1 day') * (6))
+
+ as date) as prior_year_iso_week_end_date,
+    -- postgresql week is isoweek, the first week of a year containing January 4 of that year.
+cast(date_part('week', d.date_day) as integer) as iso_week_of_year,
+
+    
+cast(to_char(d.prior_year_over_year_date_day, 'WW') as integer) as prior_year_week_of_year,
+    -- postgresql week is isoweek, the first week of a year containing January 4 of that year.
+cast(date_part('week', d.prior_year_over_year_date_day) as integer) as prior_year_iso_week_of_year,
+
+    cast(date_part('month', d.date_day) as integer) as month_of_year,
+    to_char(d.date_day, 'FMMonth')  as month_name,
+    to_char(d.date_day, 'FMMon')  as month_name_short,
+
+    cast(date_trunc('month', d.date_day) as date) as month_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('month', d.date_day) + ((interval '1 month') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as month_end_date,
+
+    cast(date_trunc('month', d.prior_year_date_day) as date) as prior_year_month_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('month', d.prior_year_date_day) + ((interval '1 month') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as prior_year_month_end_date,
+
+    cast(date_part('quarter', d.date_day) as integer) as quarter_of_year,
+    cast(date_trunc('quarter', d.date_day) as date) as quarter_start_date,
+    
+    cast(
+
+    
+
+    date_trunc('quarter', d.date_day) + ((interval '1 month') * (3))
+
+ + ((interval '1 day') * (-1))
+
+ as date) as quarter_end_date,
+
+    cast(date_part('year', d.date_day) as integer) as year_number,
+    cast(date_trunc('year', d.date_day) as date) as year_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('year', d.date_day) + ((interval '1 year') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as year_end_date
+from
+    dates_with_prior_year_dates d
+order by 1
+
+
+  );
+  
+[0m19:04:11.458919 [debug] [Thread-1 (]: SQL status: SELECT 1095 in 0.027 seconds
+[0m19:04:11.465760 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.466206 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+alter table "postgres"."classicmodels_star_schema"."dates__dbt_tmp" rename to "dates"
+[0m19:04:11.477064 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m19:04:11.503997 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: COMMIT
+[0m19:04:11.504416 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.511266 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: COMMIT
+[0m19:04:11.523213 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:04:11.532344 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dates__dbt_backup"
+[0m19:04:11.537552 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:04:11.539326 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dates__dbt_backup" cascade
+[0m19:04:11.549302 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.003 seconds
+[0m19:04:11.557900 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: Close
+[0m19:04:11.563767 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dac044a540>]}
+[0m19:04:11.569292 [info ] [Thread-1 (]: 1 of 7 OK created sql table model classicmodels_star_schema.dates .............. [[32mSELECT 1095[0m in 0.45s]
+[0m19:04:11.575768 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dates
+[0m19:04:11.582126 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_customers
+[0m19:04:11.590261 [info ] [Thread-1 (]: 2 of 7 START sql table model classicmodels_star_schema.dim_customers ........... [RUN]
+[0m19:04:11.597517 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dates, now model.classicmodels_modeling.dim_customers)
+[0m19:04:11.604390 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_customers
+[0m19:04:11.614892 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.629799 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_customers
+[0m19:04:11.656364 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.670411 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.670931 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: BEGIN
+[0m19:04:11.677801 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:11.724441 [debug] [Thread-1 (]: SQL status: BEGIN in 0.047 seconds
+[0m19:04:11.724969 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.732388 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_customers__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(customerNumber as TEXT), '') as TEXT)) as customer_key, 
+    customerName as customer_name,   
+    contactLastName as customer_last_name, 
+    contactFirstName as customer_first_name, 
+    phone as phone, 
+    addressLine1 as address_line_1, 
+    addressLine2 as address_line_2, 
+    postalCode as postal_code, 
+    city as city, 
+    state as state, 
+    country as country,
+    creditLimit as credit_limit
+FROM classicmodels.customers
+  );
+  
+[0m19:04:11.747227 [debug] [Thread-1 (]: SQL status: SELECT 122 in 0.007 seconds
+[0m19:04:11.750880 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.754391 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+alter table "postgres"."classicmodels_star_schema"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m19:04:11.763713 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:11.769497 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: COMMIT
+[0m19:04:11.775871 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.782786 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: COMMIT
+[0m19:04:11.793144 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:04:11.798031 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_customers__dbt_backup"
+[0m19:04:11.802801 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:04:11.809169 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_customers__dbt_backup" cascade
+[0m19:04:11.818110 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:11.823441 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: Close
+[0m19:04:11.829173 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabd9c2f30>]}
+[0m19:04:11.836435 [info ] [Thread-1 (]: 2 of 7 OK created sql table model classicmodels_star_schema.dim_customers ...... [[32mSELECT 122[0m in 0.23s]
+[0m19:04:11.843477 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_customers
+[0m19:04:11.850215 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_employees
+[0m19:04:11.857153 [info ] [Thread-1 (]: 3 of 7 START sql table model classicmodels_star_schema.dim_employees ........... [RUN]
+[0m19:04:11.863874 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_customers, now model.classicmodels_modeling.dim_employees)
+[0m19:04:11.869966 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_employees
+[0m19:04:11.880691 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_employees"
+[0m19:04:11.895975 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_employees
+[0m19:04:11.900121 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_employees"
+[0m19:04:11.920243 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:04:11.920695 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: BEGIN
+[0m19:04:11.930076 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:11.985344 [debug] [Thread-1 (]: SQL status: BEGIN in 0.055 seconds
+[0m19:04:11.985869 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:04:11.995385 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_employees__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT
+    md5(cast(coalesce(cast(employeeNumber as TEXT), '') as TEXT)) as employee_key,
+    lastName as employee_last_name, 
+    firstName as employee_first_name, 
+    jobTitle as job_title, 
+    email as email
+FROM classicmodels.employees
+  );
+  
+[0m19:04:12.010378 [debug] [Thread-1 (]: SQL status: SELECT 23 in 0.008 seconds
+[0m19:04:12.013904 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:04:12.017872 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+alter table "postgres"."classicmodels_star_schema"."dim_employees__dbt_tmp" rename to "dim_employees"
+[0m19:04:12.027042 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:12.033529 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: COMMIT
+[0m19:04:12.039096 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:04:12.045559 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: COMMIT
+[0m19:04:12.056017 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:04:12.062716 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_employees__dbt_backup"
+[0m19:04:12.065663 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:04:12.072085 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_employees__dbt_backup" cascade
+[0m19:04:12.080949 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:12.086441 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: Close
+[0m19:04:12.093266 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabda1ef90>]}
+[0m19:04:12.099928 [info ] [Thread-1 (]: 3 of 7 OK created sql table model classicmodels_star_schema.dim_employees ...... [[32mSELECT 23[0m in 0.23s]
+[0m19:04:12.106818 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_employees
+[0m19:04:12.113490 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_offices
+[0m19:04:12.119905 [info ] [Thread-1 (]: 4 of 7 START sql table model classicmodels_star_schema.dim_offices ............. [RUN]
+[0m19:04:12.126213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_employees, now model.classicmodels_modeling.dim_offices)
+[0m19:04:12.132426 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_offices
+[0m19:04:12.142885 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.156901 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_offices
+[0m19:04:12.161125 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.175770 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.176260 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: BEGIN
+[0m19:04:12.183167 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:12.232085 [debug] [Thread-1 (]: SQL status: BEGIN in 0.049 seconds
+[0m19:04:12.232622 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.240108 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_offices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(officeCode as TEXT), '') as TEXT)) as office_key, 
+    postalCode as postal_code, 
+    city as city, 
+    state as state, 
+    country as country, 
+    territory as territory
+FROM classicmodels.offices
+  );
+  
+[0m19:04:12.251312 [debug] [Thread-1 (]: SQL status: SELECT 7 in 0.005 seconds
+[0m19:04:12.256454 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.259474 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+alter table "postgres"."classicmodels_star_schema"."dim_offices__dbt_tmp" rename to "dim_offices"
+[0m19:04:12.268950 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:12.274720 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: COMMIT
+[0m19:04:12.280216 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.288520 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: COMMIT
+[0m19:04:12.299418 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:04:12.305201 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_offices__dbt_backup"
+[0m19:04:12.310341 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:04:12.316998 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_offices__dbt_backup" cascade
+[0m19:04:12.326857 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:12.334990 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: Close
+[0m19:04:12.341395 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabda1f3b0>]}
+[0m19:04:12.348112 [info ] [Thread-1 (]: 4 of 7 OK created sql table model classicmodels_star_schema.dim_offices ........ [[32mSELECT 7[0m in 0.22s]
+[0m19:04:12.354950 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_offices
+[0m19:04:12.361437 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_products
+[0m19:04:12.367716 [info ] [Thread-1 (]: 5 of 7 START sql table model classicmodels_star_schema.dim_products ............ [RUN]
+[0m19:04:12.374820 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_offices, now model.classicmodels_modeling.dim_products)
+[0m19:04:12.382947 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_products
+[0m19:04:12.393260 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_products"
+[0m19:04:12.407754 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_products
+[0m19:04:12.411525 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_products"
+[0m19:04:12.426806 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:04:12.427256 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: BEGIN
+[0m19:04:12.434550 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:12.484197 [debug] [Thread-1 (]: SQL status: BEGIN in 0.050 seconds
+[0m19:04:12.484713 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:04:12.492239 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_products__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(productCode as TEXT), '') as TEXT)) as product_key, 
+    productName as product_name, 
+    products.productLine as product_line, 
+    productScale as product_scale, 
+    productVendor as product_vendor,
+    productDescription as product_description, 
+    textDescription as product_line_description
+FROM classicmodels.products
+JOIN classicmodels.productlines ON products.productLine=productlines.productLine
+  );
+  
+[0m19:04:12.509297 [debug] [Thread-1 (]: SQL status: SELECT 110 in 0.010 seconds
+[0m19:04:12.514305 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:04:12.517403 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+alter table "postgres"."classicmodels_star_schema"."dim_products__dbt_tmp" rename to "dim_products"
+[0m19:04:12.526300 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:12.532210 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: COMMIT
+[0m19:04:12.537127 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:04:12.543729 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: COMMIT
+[0m19:04:12.554642 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:04:12.559075 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_products__dbt_backup"
+[0m19:04:12.563327 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:04:12.569771 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_products__dbt_backup" cascade
+[0m19:04:12.578574 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:12.584095 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: Close
+[0m19:04:12.590290 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabd9f4bc0>]}
+[0m19:04:12.597136 [info ] [Thread-1 (]: 5 of 7 OK created sql table model classicmodels_star_schema.dim_products ....... [[32mSELECT 110[0m in 0.22s]
+[0m19:04:12.603263 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_products
+[0m19:04:12.609540 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.fact_orders
+[0m19:04:12.616116 [info ] [Thread-1 (]: 6 of 7 START sql table model classicmodels_star_schema.fact_orders ............. [RUN]
+[0m19:04:12.622270 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_products, now model.classicmodels_modeling.fact_orders)
+[0m19:04:12.628881 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.fact_orders
+[0m19:04:12.645142 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.657792 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.fact_orders
+[0m19:04:12.662221 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.677084 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.677579 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: BEGIN
+[0m19:04:12.684349 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:12.735983 [debug] [Thread-1 (]: SQL status: BEGIN in 0.052 seconds
+[0m19:04:12.736507 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.745615 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."fact_orders__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(orders.orderNumber as TEXT), '') || '-' || coalesce(cast(orderdetails.orderLineNumber as TEXT), '') as TEXT)) as fact_order_key,
+    md5(cast(coalesce(cast(customers.customerNumber as TEXT), '') as TEXT)) AS customer_key, 
+    md5(cast(coalesce(cast(employees.employeeNumber as TEXT), '') as TEXT)) AS employee_key,
+    md5(cast(coalesce(cast(offices.officeCode as TEXT), '') as TEXT)) AS office_key,
+    md5(cast(coalesce(cast(productCode as TEXT), '') as TEXT)) AS product_key, 
+    orders.orderDate AS order_date,
+    orders.requiredDate AS order_required_date, 
+    orders.shippedDate AS order_shipped_date,
+    orderdetails.quantityOrdered AS quantity_ordered, 
+    orderdetails.priceEach AS product_price
+FROM classicmodels.orders
+JOIN classicmodels.orderdetails ON orders.orderNumber = orderdetails.orderNumber
+JOIN classicmodels.customers ON orders.customerNumber = customers.customerNumber
+JOIN classicmodels.employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+JOIN classicmodels.offices ON employees.officeCode = offices.officeCode
+  );
+  
+[0m19:04:12.772191 [debug] [Thread-1 (]: SQL status: SELECT 2996 in 0.020 seconds
+[0m19:04:12.776053 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.779318 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+alter table "postgres"."classicmodels_star_schema"."fact_orders__dbt_tmp" rename to "fact_orders"
+[0m19:04:12.788440 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:12.793900 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: COMMIT
+[0m19:04:12.799166 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.805535 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: COMMIT
+[0m19:04:12.825244 [debug] [Thread-1 (]: SQL status: COMMIT in 0.013 seconds
+[0m19:04:12.828202 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."fact_orders__dbt_backup"
+[0m19:04:12.833190 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:04:12.838995 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+drop table if exists "postgres"."classicmodels_star_schema"."fact_orders__dbt_backup" cascade
+[0m19:04:12.848270 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:12.853198 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: Close
+[0m19:04:12.859588 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabe6ecd70>]}
+[0m19:04:12.866365 [info ] [Thread-1 (]: 6 of 7 OK created sql table model classicmodels_star_schema.fact_orders ........ [[32mSELECT 2996[0m in 0.24s]
+[0m19:04:12.873000 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.fact_orders
+[0m19:04:12.879431 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_dates
+[0m19:04:12.885999 [info ] [Thread-1 (]: 7 of 7 START sql table model classicmodels_star_schema.dim_dates ............... [RUN]
+[0m19:04:12.892162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.fact_orders, now model.classicmodels_modeling.dim_dates)
+[0m19:04:12.898728 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_dates
+[0m19:04:12.908343 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_dates"
+[0m19:04:12.923328 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_dates
+[0m19:04:12.927756 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_dates"
+[0m19:04:12.942730 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:04:12.943231 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: BEGIN
+[0m19:04:12.949766 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:04:12.995650 [debug] [Thread-1 (]: SQL status: BEGIN in 0.046 seconds
+[0m19:04:12.996159 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:04:13.002596 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_dates__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with date_dimension as (
+       select * from "postgres"."classicmodels_star_schema"."dates"
+   )
+
+   SELECT
+       date_day,
+       day_of_week,
+       day_of_month,
+       day_of_year,
+       week_of_year,
+       month_of_year,
+       month_name,
+       quarter_of_year,
+       year_number
+   FROM
+       date_dimension d
+  );
+  
+[0m19:04:13.018307 [debug] [Thread-1 (]: SQL status: SELECT 1095 in 0.008 seconds
+[0m19:04:13.021830 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:04:13.025507 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+alter table "postgres"."classicmodels_star_schema"."dim_dates__dbt_tmp" rename to "dim_dates"
+[0m19:04:13.034462 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:04:13.040030 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: COMMIT
+[0m19:04:13.045186 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:04:13.051603 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: COMMIT
+[0m19:04:13.062200 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:04:13.068498 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_dates__dbt_backup"
+[0m19:04:13.071799 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:04:13.080102 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_dates__dbt_backup" cascade
+[0m19:04:13.091290 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:04:13.097943 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: Close
+[0m19:04:13.103831 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd4b16081-8bbb-43a6-8cf7-10cd34be46cf', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabd9f8560>]}
+[0m19:04:13.110495 [info ] [Thread-1 (]: 7 of 7 OK created sql table model classicmodels_star_schema.dim_dates .......... [[32mSELECT 1095[0m in 0.21s]
+[0m19:04:13.117077 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_dates
+[0m19:04:13.124839 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:13.129503 [debug] [MainThread]: On master: BEGIN
+[0m19:04:13.136436 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:04:13.185609 [debug] [MainThread]: SQL status: BEGIN in 0.049 seconds
+[0m19:04:13.186108 [debug] [MainThread]: On master: COMMIT
+[0m19:04:13.192313 [debug] [MainThread]: Using postgres connection "master"
+[0m19:04:13.199830 [debug] [MainThread]: On master: COMMIT
+[0m19:04:13.207981 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:04:13.214756 [debug] [MainThread]: On master: Close
+[0m19:04:13.221612 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:04:13.227703 [debug] [MainThread]: Connection 'model.classicmodels_modeling.dim_dates' was properly closed.
+[0m19:04:13.234048 [info ] [MainThread]: 
+[0m19:04:13.241121 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 2.67 seconds (2.67s).
+[0m19:04:13.249074 [debug] [MainThread]: Command end result
+[0m19:04:13.366710 [info ] [MainThread]: 
+[0m19:04:13.367278 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:04:13.374238 [info ] [MainThread]: 
+[0m19:04:13.381147 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m19:04:13.388971 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.902363, "process_user_time": 4.063789, "process_kernel_time": 0.309036, "process_mem_max_rss": "107236", "process_in_blocks": "40973", "process_out_blocks": "6536"}
+[0m19:04:13.395779 [debug] [MainThread]: Command `dbt run` succeeded at 19:04:13.395631 after 8.91 seconds
+[0m19:04:13.402190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabff8af90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabe6ee7b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72dabe9d1580>]}
+[0m19:04:13.409144 [debug] [MainThread]: Flushing usage events
+[0m19:13:25.069452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f3c11400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f394bc80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f345cf80>]}
+
+
+============================== 19:13:25.072792 | 910d728b-dd47-421a-91de-7361a00e039e ==============================
+[0m19:13:25.072792 [info ] [MainThread]: Running with dbt=1.8.1
+[0m19:13:25.079669 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/coder/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run -s star_schema', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:13:25.393359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f2a2fe60>]}
+[0m19:13:25.577717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f3ecdc70>]}
+[0m19:13:25.578671 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m19:13:25.879043 [debug] [MainThread]: checksum: ebc509fb14e151ea268e89b60fd5abf912ed99129f87516462718fa2f14f4838, vars: {}, profile: , target: , version: 1.8.1
+[0m19:13:26.611840 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m19:13:26.612785 [debug] [MainThread]: Partial parsing: added file: classicmodels_modeling://models/obt/orders_obt.sql
+[0m19:13:26.626434 [debug] [MainThread]: Partial parsing: added file: classicmodels_modeling://models/obt/schema.yml
+[0m19:13:26.632968 [debug] [MainThread]: Partial parsing: updated file: classicmodels_modeling://models/star_schema/schema.yml
+[0m19:13:27.542705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f2a2f950>]}
+[0m19:13:27.825991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f20248c0>]}
+[0m19:13:27.826644 [info ] [MainThread]: Found 8 models, 12 data tests, 664 macros
+[0m19:13:27.832816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f29e3890>]}
+[0m19:13:27.841629 [info ] [MainThread]: 
+[0m19:13:27.846784 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:13:27.857223 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m19:13:27.898124 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m19:13:27.898702 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:13:27.905132 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:13:27.964336 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.059 seconds
+[0m19:13:27.965853 [debug] [ThreadPool]: On list_postgres: Close
+[0m19:13:27.972880 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now list_postgres_classicmodels)
+[0m19:13:27.983838 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels"
+[0m19:13:27.985842 [debug] [ThreadPool]: On list_postgres_classicmodels: BEGIN
+[0m19:13:27.992033 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:28.039980 [debug] [ThreadPool]: SQL status: BEGIN in 0.048 seconds
+[0m19:13:28.040467 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels"
+[0m19:13:28.047983 [debug] [ThreadPool]: On list_postgres_classicmodels: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels'
+  
+[0m19:13:28.064412 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.007 seconds
+[0m19:13:28.065971 [debug] [ThreadPool]: On list_postgres_classicmodels: ROLLBACK
+[0m19:13:28.074823 [debug] [ThreadPool]: On list_postgres_classicmodels: Close
+[0m19:13:28.080486 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres_classicmodels, now list_postgres_classicmodels_star_schema)
+[0m19:13:28.089020 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:13:28.093709 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: BEGIN
+[0m19:13:28.100629 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:13:28.148200 [debug] [ThreadPool]: SQL status: BEGIN in 0.048 seconds
+[0m19:13:28.148686 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:13:28.155346 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_star_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_star_schema'
+  
+[0m19:13:28.167986 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.006 seconds
+[0m19:13:28.169474 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: ROLLBACK
+[0m19:13:28.176077 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: Close
+[0m19:13:28.186887 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:28.187743 [debug] [MainThread]: On master: BEGIN
+[0m19:13:28.194299 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:13:28.237628 [debug] [MainThread]: SQL status: BEGIN in 0.043 seconds
+[0m19:13:28.238126 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:28.244818 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:13:28.256691 [debug] [MainThread]: SQL status: SELECT 0 in 0.006 seconds
+[0m19:13:28.258708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f298bf80>]}
+[0m19:13:28.264491 [debug] [MainThread]: On master: ROLLBACK
+[0m19:13:28.271947 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:28.276539 [debug] [MainThread]: On master: BEGIN
+[0m19:13:28.286035 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m19:13:28.289675 [debug] [MainThread]: On master: COMMIT
+[0m19:13:28.296367 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:28.302992 [debug] [MainThread]: On master: COMMIT
+[0m19:13:28.311319 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:13:28.316146 [debug] [MainThread]: On master: Close
+[0m19:13:28.322671 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:13:28.328824 [info ] [MainThread]: 
+[0m19:13:28.337649 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dates
+[0m19:13:28.342149 [info ] [Thread-1 (]: 1 of 7 START sql table model classicmodels_star_schema.dates ................... [RUN]
+[0m19:13:28.348607 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_star_schema, now model.classicmodels_modeling.dates)
+[0m19:13:28.355059 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dates
+[0m19:13:28.406297 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:28.406931 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: BEGIN
+[0m19:13:28.413395 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:28.463137 [debug] [Thread-1 (]: SQL status: BEGIN in 0.050 seconds
+[0m19:13:28.463740 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:28.470404 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+
+
+        select 
+        ((cast('2005-12-31' as timestamp))::date - (cast('2003-01-01' as timestamp))::date)
+    
+[0m19:13:28.478893 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.002 seconds
+[0m19:13:28.594284 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dates"
+[0m19:13:28.755517 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dates
+[0m19:13:29.170551 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dates"
+[0m19:13:29.205183 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:29.205984 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dates__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+    
+with base_dates as (
+    
+    with date_spine as
+(
+
+    
+
+
+
+
+
+with rawdata as (
+
+    
+
+    
+
+    with p as (
+        select 0 as generated_number union all select 1
+    ), unioned as (
+
+    select
+
+    
+    p0.generated_number * power(2, 0)
+     + 
+    
+    p1.generated_number * power(2, 1)
+     + 
+    
+    p2.generated_number * power(2, 2)
+     + 
+    
+    p3.generated_number * power(2, 3)
+     + 
+    
+    p4.generated_number * power(2, 4)
+     + 
+    
+    p5.generated_number * power(2, 5)
+     + 
+    
+    p6.generated_number * power(2, 6)
+     + 
+    
+    p7.generated_number * power(2, 7)
+     + 
+    
+    p8.generated_number * power(2, 8)
+     + 
+    
+    p9.generated_number * power(2, 9)
+     + 
+    
+    p10.generated_number * power(2, 10)
+    
+    
+    + 1
+    as generated_number
+
+    from
+
+    
+    p as p0
+     cross join 
+    
+    p as p1
+     cross join 
+    
+    p as p2
+     cross join 
+    
+    p as p3
+     cross join 
+    
+    p as p4
+     cross join 
+    
+    p as p5
+     cross join 
+    
+    p as p6
+     cross join 
+    
+    p as p7
+     cross join 
+    
+    p as p8
+     cross join 
+    
+    p as p9
+     cross join 
+    
+    p as p10
+    
+    
+
+    )
+
+    select *
+    from unioned
+    where generated_number <= 1095
+    order by generated_number
+
+
+
+),
+
+all_periods as (
+
+    select (
+        
+
+    cast('2003-01-01' as timestamp) + ((interval '1 day') * ((row_number() over (order by 1) - 1)))
+
+
+    ) as date_day
+    from rawdata
+
+),
+
+filtered as (
+
+    select *
+    from all_periods
+    where date_day <= cast('2005-12-31' as timestamp)
+
+)
+
+select * from filtered
+
+
+
+)
+select
+    cast(d.date_day as timestamp) as date_day
+from
+    date_spine d
+
+
+),
+dates_with_prior_year_dates as (
+
+    select
+        cast(d.date_day as date) as date_day,
+        cast(
+
+    d.date_day + ((interval '1 year') * (-1))
+
+ as date) as prior_year_date_day,
+        cast(
+
+    d.date_day + ((interval '1 day') * (-364))
+
+ as date) as prior_year_over_year_date_day
+    from
+    	base_dates d
+
+)
+select
+    d.date_day,
+    cast(
+
+    d.date_day + ((interval '1 day') * (-1))
+
+ as date) as prior_date_day,
+    cast(
+
+    d.date_day + ((interval '1 day') * (1))
+
+ as date) as next_date_day,
+    d.prior_year_date_day as prior_year_date_day,
+    d.prior_year_over_year_date_day,
+    -- Monday(1) to Sunday (7)
+        cast(date_part('isodow', d.date_day) as integer) as day_of_week,
+
+    to_char(d.date_day, 'FMDay') as day_of_week_name,
+    to_char(d.date_day, 'FMDy') as day_of_week_name_short,
+    date_part('day', d.date_day) as day_of_month,
+    date_part('doy', d.date_day) as day_of_year,
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) as week_start_date,
+    cast(
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) + ((interval '1 day') * (6))
+
+ as date) as week_end_date,
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.prior_year_over_year_date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) as prior_year_week_start_date,
+    cast(
+
+    -- Sunday as week start date
+cast(
+
+    date_trunc('week', 
+
+    d.prior_year_over_year_date_day + ((interval '1 day') * (1))
+
+) + ((interval '1 day') * (-1))
+
+ as date) + ((interval '1 day') * (6))
+
+ as date) as prior_year_week_end_date,
+    
+cast(to_char(d.date_day, 'WW') as integer) as week_of_year,
+
+    cast(date_trunc('week', d.date_day) as date) as iso_week_start_date,
+    cast(
+
+    cast(date_trunc('week', d.date_day) as date) + ((interval '1 day') * (6))
+
+ as date) as iso_week_end_date,
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) as prior_year_iso_week_start_date,
+    cast(
+
+    cast(date_trunc('week', d.prior_year_over_year_date_day) as date) + ((interval '1 day') * (6))
+
+ as date) as prior_year_iso_week_end_date,
+    -- postgresql week is isoweek, the first week of a year containing January 4 of that year.
+cast(date_part('week', d.date_day) as integer) as iso_week_of_year,
+
+    
+cast(to_char(d.prior_year_over_year_date_day, 'WW') as integer) as prior_year_week_of_year,
+    -- postgresql week is isoweek, the first week of a year containing January 4 of that year.
+cast(date_part('week', d.prior_year_over_year_date_day) as integer) as prior_year_iso_week_of_year,
+
+    cast(date_part('month', d.date_day) as integer) as month_of_year,
+    to_char(d.date_day, 'FMMonth')  as month_name,
+    to_char(d.date_day, 'FMMon')  as month_name_short,
+
+    cast(date_trunc('month', d.date_day) as date) as month_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('month', d.date_day) + ((interval '1 month') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as month_end_date,
+
+    cast(date_trunc('month', d.prior_year_date_day) as date) as prior_year_month_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('month', d.prior_year_date_day) + ((interval '1 month') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as prior_year_month_end_date,
+
+    cast(date_part('quarter', d.date_day) as integer) as quarter_of_year,
+    cast(date_trunc('quarter', d.date_day) as date) as quarter_start_date,
+    
+    cast(
+
+    
+
+    date_trunc('quarter', d.date_day) + ((interval '1 month') * (3))
+
+ + ((interval '1 day') * (-1))
+
+ as date) as quarter_end_date,
+
+    cast(date_part('year', d.date_day) as integer) as year_number,
+    cast(date_trunc('year', d.date_day) as date) as year_start_date,
+    cast(cast(
+        
+
+    
+
+    date_trunc('year', d.date_day) + ((interval '1 year') * (1))
+
+ + ((interval '1 day') * (-1))
+
+
+        as date) as date) as year_end_date
+from
+    dates_with_prior_year_dates d
+order by 1
+
+
+  );
+  
+[0m19:13:29.240924 [debug] [Thread-1 (]: SQL status: SELECT 1095 in 0.029 seconds
+[0m19:13:29.247946 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:29.248383 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+alter table "postgres"."classicmodels_star_schema"."dates" rename to "dates__dbt_backup"
+[0m19:13:29.257321 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.264603 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:29.268234 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+alter table "postgres"."classicmodels_star_schema"."dates__dbt_tmp" rename to "dates"
+[0m19:13:29.276403 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.300601 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: COMMIT
+[0m19:13:29.301051 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:29.307031 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: COMMIT
+[0m19:13:29.318293 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:13:29.327813 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dates__dbt_backup"
+[0m19:13:29.464356 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dates"
+[0m19:13:29.464873 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dates"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dates__dbt_backup" cascade
+[0m19:13:29.475996 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.005 seconds
+[0m19:13:29.479845 [debug] [Thread-1 (]: On model.classicmodels_modeling.dates: Close
+[0m19:13:29.485371 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f2439940>]}
+[0m19:13:29.490675 [info ] [Thread-1 (]: 1 of 7 OK created sql table model classicmodels_star_schema.dates .............. [[32mSELECT 1095[0m in 1.14s]
+[0m19:13:29.497346 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dates
+[0m19:13:29.503704 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_customers
+[0m19:13:29.510278 [info ] [Thread-1 (]: 2 of 7 START sql table model classicmodels_star_schema.dim_customers ........... [RUN]
+[0m19:13:29.516850 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dates, now model.classicmodels_modeling.dim_customers)
+[0m19:13:29.523385 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_customers
+[0m19:13:29.544112 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.560043 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_customers
+[0m19:13:29.563880 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.582220 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.582688 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: BEGIN
+[0m19:13:29.589015 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:29.639482 [debug] [Thread-1 (]: SQL status: BEGIN in 0.050 seconds
+[0m19:13:29.639985 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.646829 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_customers__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(customerNumber as TEXT), '') as TEXT)) as customer_key, 
+    customerName as customer_name,   
+    contactLastName as customer_last_name, 
+    contactFirstName as customer_first_name, 
+    phone as phone, 
+    addressLine1 as address_line_1, 
+    addressLine2 as address_line_2, 
+    postalCode as postal_code, 
+    city as city, 
+    state as state, 
+    country as country,
+    creditLimit as credit_limit
+FROM classicmodels.customers
+  );
+  
+[0m19:13:29.659492 [debug] [Thread-1 (]: SQL status: SELECT 122 in 0.006 seconds
+[0m19:13:29.662976 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.666157 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+alter table "postgres"."classicmodels_star_schema"."dim_customers" rename to "dim_customers__dbt_backup"
+[0m19:13:29.674525 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.681839 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.685472 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+alter table "postgres"."classicmodels_star_schema"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m19:13:29.694664 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.700857 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: COMMIT
+[0m19:13:29.705902 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.713252 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: COMMIT
+[0m19:13:29.723427 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m19:13:29.729159 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_customers__dbt_backup"
+[0m19:13:29.733698 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_customers"
+[0m19:13:29.739537 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_customers"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_customers__dbt_backup" cascade
+[0m19:13:29.749969 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m19:13:29.753531 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_customers: Close
+[0m19:13:29.759589 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f497df70>]}
+[0m19:13:29.765591 [info ] [Thread-1 (]: 2 of 7 OK created sql table model classicmodels_star_schema.dim_customers ...... [[32mSELECT 122[0m in 0.24s]
+[0m19:13:29.772019 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_customers
+[0m19:13:29.778006 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_employees
+[0m19:13:29.784560 [info ] [Thread-1 (]: 3 of 7 START sql table model classicmodels_star_schema.dim_employees ........... [RUN]
+[0m19:13:29.790877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_customers, now model.classicmodels_modeling.dim_employees)
+[0m19:13:29.797023 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_employees
+[0m19:13:29.807522 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.825576 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_employees
+[0m19:13:29.829694 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.848682 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.849166 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: BEGIN
+[0m19:13:29.855692 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:29.901933 [debug] [Thread-1 (]: SQL status: BEGIN in 0.046 seconds
+[0m19:13:29.902461 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.909472 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_employees__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT
+    md5(cast(coalesce(cast(employeeNumber as TEXT), '') as TEXT)) as employee_key,
+    lastName as employee_last_name, 
+    firstName as employee_first_name, 
+    jobTitle as job_title, 
+    email as email
+FROM classicmodels.employees
+  );
+  
+[0m19:13:29.919459 [debug] [Thread-1 (]: SQL status: SELECT 23 in 0.004 seconds
+[0m19:13:29.927169 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.928925 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+alter table "postgres"."classicmodels_star_schema"."dim_employees" rename to "dim_employees__dbt_backup"
+[0m19:13:29.937269 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.944678 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.948295 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+alter table "postgres"."classicmodels_star_schema"."dim_employees__dbt_tmp" rename to "dim_employees"
+[0m19:13:29.956594 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:29.962353 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: COMMIT
+[0m19:13:29.967154 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.973767 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: COMMIT
+[0m19:13:29.982830 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:13:29.989124 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_employees__dbt_backup"
+[0m19:13:29.993678 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_employees"
+[0m19:13:29.999729 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_employees"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_employees__dbt_backup" cascade
+[0m19:13:30.023084 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.017 seconds
+[0m19:13:30.024579 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_employees: Close
+[0m19:13:30.030055 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f134a8a0>]}
+[0m19:13:30.036662 [info ] [Thread-1 (]: 3 of 7 OK created sql table model classicmodels_star_schema.dim_employees ...... [[32mSELECT 23[0m in 0.24s]
+[0m19:13:30.043198 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_employees
+[0m19:13:30.049462 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_offices
+[0m19:13:30.056092 [info ] [Thread-1 (]: 4 of 7 START sql table model classicmodels_star_schema.dim_offices ............. [RUN]
+[0m19:13:30.062611 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_employees, now model.classicmodels_modeling.dim_offices)
+[0m19:13:30.068922 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_offices
+[0m19:13:30.078791 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.095550 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_offices
+[0m19:13:30.099287 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.117038 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.117459 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: BEGIN
+[0m19:13:30.123638 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:30.166382 [debug] [Thread-1 (]: SQL status: BEGIN in 0.043 seconds
+[0m19:13:30.166919 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.173386 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_offices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(officeCode as TEXT), '') as TEXT)) as office_key, 
+    postalCode as postal_code, 
+    city as city, 
+    state as state, 
+    country as country, 
+    territory as territory
+FROM classicmodels.offices
+  );
+  
+[0m19:13:30.184301 [debug] [Thread-1 (]: SQL status: SELECT 7 in 0.005 seconds
+[0m19:13:30.189145 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.192519 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+alter table "postgres"."classicmodels_star_schema"."dim_offices" rename to "dim_offices__dbt_backup"
+[0m19:13:30.201547 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.208656 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.212041 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+alter table "postgres"."classicmodels_star_schema"."dim_offices__dbt_tmp" rename to "dim_offices"
+[0m19:13:30.220769 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.227137 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: COMMIT
+[0m19:13:30.232733 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.239107 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: COMMIT
+[0m19:13:30.248601 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:13:30.254240 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_offices__dbt_backup"
+[0m19:13:30.258601 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_offices"
+[0m19:13:30.263996 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_offices"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_offices__dbt_backup" cascade
+[0m19:13:30.274606 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m19:13:30.278070 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_offices: Close
+[0m19:13:30.283519 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f13495b0>]}
+[0m19:13:30.289753 [info ] [Thread-1 (]: 4 of 7 OK created sql table model classicmodels_star_schema.dim_offices ........ [[32mSELECT 7[0m in 0.22s]
+[0m19:13:30.296073 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_offices
+[0m19:13:30.302463 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_products
+[0m19:13:30.308856 [info ] [Thread-1 (]: 5 of 7 START sql table model classicmodels_star_schema.dim_products ............ [RUN]
+[0m19:13:30.315388 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_offices, now model.classicmodels_modeling.dim_products)
+[0m19:13:30.321386 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_products
+[0m19:13:30.333058 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_products"
+[0m19:13:30.348335 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_products
+[0m19:13:30.352429 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_products"
+[0m19:13:30.370191 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.370652 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: BEGIN
+[0m19:13:30.377540 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:30.421054 [debug] [Thread-1 (]: SQL status: BEGIN in 0.043 seconds
+[0m19:13:30.421532 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.428001 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_products__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(productCode as TEXT), '') as TEXT)) as product_key, 
+    productName as product_name, 
+    products.productLine as product_line, 
+    productScale as product_scale, 
+    productVendor as product_vendor,
+    productDescription as product_description, 
+    textDescription as product_line_description
+FROM classicmodels.products
+JOIN classicmodels.productlines ON products.productLine=productlines.productLine
+  );
+  
+[0m19:13:30.439499 [debug] [Thread-1 (]: SQL status: SELECT 110 in 0.005 seconds
+[0m19:13:30.443921 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.446836 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+alter table "postgres"."classicmodels_star_schema"."dim_products" rename to "dim_products__dbt_backup"
+[0m19:13:30.455383 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.462438 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.466201 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+alter table "postgres"."classicmodels_star_schema"."dim_products__dbt_tmp" rename to "dim_products"
+[0m19:13:30.474079 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.480342 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: COMMIT
+[0m19:13:30.485187 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.491290 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: COMMIT
+[0m19:13:30.500941 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:13:30.506273 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_products__dbt_backup"
+[0m19:13:30.511028 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_products"
+[0m19:13:30.516983 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_products"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_products__dbt_backup" cascade
+[0m19:13:30.527098 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m19:13:30.530387 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_products: Close
+[0m19:13:30.535628 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f38f2f30>]}
+[0m19:13:30.541507 [info ] [Thread-1 (]: 5 of 7 OK created sql table model classicmodels_star_schema.dim_products ....... [[32mSELECT 110[0m in 0.22s]
+[0m19:13:30.548487 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_products
+[0m19:13:30.554975 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.fact_orders
+[0m19:13:30.561357 [info ] [Thread-1 (]: 6 of 7 START sql table model classicmodels_star_schema.fact_orders ............. [RUN]
+[0m19:13:30.567391 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.dim_products, now model.classicmodels_modeling.fact_orders)
+[0m19:13:30.574047 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.fact_orders
+[0m19:13:30.588470 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.603806 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.fact_orders
+[0m19:13:30.607609 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.627909 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.628309 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: BEGIN
+[0m19:13:30.634988 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:30.682100 [debug] [Thread-1 (]: SQL status: BEGIN in 0.047 seconds
+[0m19:13:30.682646 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.688908 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."fact_orders__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    md5(cast(coalesce(cast(orders.orderNumber as TEXT), '') || '-' || coalesce(cast(orderdetails.orderLineNumber as TEXT), '') as TEXT)) as fact_order_key,
+    md5(cast(coalesce(cast(customers.customerNumber as TEXT), '') as TEXT)) AS customer_key, 
+    md5(cast(coalesce(cast(employees.employeeNumber as TEXT), '') as TEXT)) AS employee_key,
+    md5(cast(coalesce(cast(offices.officeCode as TEXT), '') as TEXT)) AS office_key,
+    md5(cast(coalesce(cast(productCode as TEXT), '') as TEXT)) AS product_key, 
+    orders.orderDate AS order_date,
+    orders.requiredDate AS order_required_date, 
+    orders.shippedDate AS order_shipped_date,
+    orderdetails.quantityOrdered AS quantity_ordered, 
+    orderdetails.priceEach AS product_price
+FROM classicmodels.orders
+JOIN classicmodels.orderdetails ON orders.orderNumber = orderdetails.orderNumber
+JOIN classicmodels.customers ON orders.customerNumber = customers.customerNumber
+JOIN classicmodels.employees ON customers.salesRepEmployeeNumber = employees.employeeNumber
+JOIN classicmodels.offices ON employees.officeCode = offices.officeCode
+  );
+  
+[0m19:13:30.715577 [debug] [Thread-1 (]: SQL status: SELECT 2996 in 0.020 seconds
+[0m19:13:30.719150 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.722606 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+alter table "postgres"."classicmodels_star_schema"."fact_orders" rename to "fact_orders__dbt_backup"
+[0m19:13:30.730309 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.739305 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.741352 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+alter table "postgres"."classicmodels_star_schema"."fact_orders__dbt_tmp" rename to "fact_orders"
+[0m19:13:30.749765 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:30.755621 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: COMMIT
+[0m19:13:30.760577 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.767349 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: COMMIT
+[0m19:13:30.781911 [debug] [Thread-1 (]: SQL status: COMMIT in 0.008 seconds
+[0m19:13:30.784874 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."fact_orders__dbt_backup"
+[0m19:13:30.789236 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.fact_orders"
+[0m19:13:30.795018 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.fact_orders"} */
+drop table if exists "postgres"."classicmodels_star_schema"."fact_orders__dbt_backup" cascade
+[0m19:13:30.809165 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.007 seconds
+[0m19:13:30.810900 [debug] [Thread-1 (]: On model.classicmodels_modeling.fact_orders: Close
+[0m19:13:30.816728 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f29fc7a0>]}
+[0m19:13:30.823787 [info ] [Thread-1 (]: 6 of 7 OK created sql table model classicmodels_star_schema.fact_orders ........ [[32mSELECT 2996[0m in 0.25s]
+[0m19:13:30.830498 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.fact_orders
+[0m19:13:30.836786 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.dim_dates
+[0m19:13:30.843145 [info ] [Thread-1 (]: 7 of 7 START sql table model classicmodels_star_schema.dim_dates ............... [RUN]
+[0m19:13:30.849721 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.classicmodels_modeling.fact_orders, now model.classicmodels_modeling.dim_dates)
+[0m19:13:30.856174 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.dim_dates
+[0m19:13:30.865426 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.dim_dates"
+[0m19:13:30.884463 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.dim_dates
+[0m19:13:30.888369 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.dim_dates"
+[0m19:13:30.905776 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:30.906202 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: BEGIN
+[0m19:13:30.912677 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:13:30.975739 [debug] [Thread-1 (]: SQL status: BEGIN in 0.063 seconds
+[0m19:13:30.976345 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:30.983010 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_star_schema"."dim_dates__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with date_dimension as (
+       select * from "postgres"."classicmodels_star_schema"."dates"
+   )
+
+   SELECT
+       date_day,
+       day_of_week,
+       day_of_month,
+       day_of_year,
+       week_of_year,
+       month_of_year,
+       month_name,
+       quarter_of_year,
+       year_number
+   FROM
+       date_dimension d
+  );
+  
+[0m19:13:30.995160 [debug] [Thread-1 (]: SQL status: SELECT 1095 in 0.005 seconds
+[0m19:13:30.999156 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:31.002364 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+alter table "postgres"."classicmodels_star_schema"."dim_dates" rename to "dim_dates__dbt_backup"
+[0m19:13:31.013248 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m19:13:31.018633 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:31.022391 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+alter table "postgres"."classicmodels_star_schema"."dim_dates__dbt_tmp" rename to "dim_dates"
+[0m19:13:31.030492 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:13:31.036812 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: COMMIT
+[0m19:13:31.041694 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:31.048285 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: COMMIT
+[0m19:13:31.058693 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m19:13:31.064070 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_star_schema"."dim_dates__dbt_backup"
+[0m19:13:31.068487 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.dim_dates"
+[0m19:13:31.075269 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.dim_dates"} */
+drop table if exists "postgres"."classicmodels_star_schema"."dim_dates__dbt_backup" cascade
+[0m19:13:31.085448 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m19:13:31.089541 [debug] [Thread-1 (]: On model.classicmodels_modeling.dim_dates: Close
+[0m19:13:31.095524 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '910d728b-dd47-421a-91de-7361a00e039e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f1431340>]}
+[0m19:13:31.102229 [info ] [Thread-1 (]: 7 of 7 OK created sql table model classicmodels_star_schema.dim_dates .......... [[32mSELECT 1095[0m in 0.25s]
+[0m19:13:31.108550 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.dim_dates
+[0m19:13:31.116277 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:31.121756 [debug] [MainThread]: On master: BEGIN
+[0m19:13:31.128587 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:13:31.174894 [debug] [MainThread]: SQL status: BEGIN in 0.046 seconds
+[0m19:13:31.175383 [debug] [MainThread]: On master: COMMIT
+[0m19:13:31.182201 [debug] [MainThread]: Using postgres connection "master"
+[0m19:13:31.188740 [debug] [MainThread]: On master: COMMIT
+[0m19:13:31.196379 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:13:31.200990 [debug] [MainThread]: On master: Close
+[0m19:13:31.207413 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:13:31.213565 [debug] [MainThread]: Connection 'model.classicmodels_modeling.dim_dates' was properly closed.
+[0m19:13:31.219970 [info ] [MainThread]: 
+[0m19:13:31.227317 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 3.37 seconds (3.37s).
+[0m19:13:31.235400 [debug] [MainThread]: Command end result
+[0m19:13:31.374881 [info ] [MainThread]: 
+[0m19:13:31.375455 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:13:31.381392 [info ] [MainThread]: 
+[0m19:13:31.388067 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m19:13:31.395105 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.431497, "process_user_time": 3.098546, "process_kernel_time": 0.257239, "process_mem_max_rss": "109236", "process_in_blocks": "41296", "process_out_blocks": "6872"}
+[0m19:13:31.401442 [debug] [MainThread]: Command `dbt run` succeeded at 19:13:31.401319 after 6.44 seconds
+[0m19:13:31.407548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f6c31c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f234e660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73f6f234faa0>]}
+[0m19:13:31.413889 [debug] [MainThread]: Flushing usage events
+[0m19:17:28.390604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6e04a0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6c825bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6ce5db80>]}
+
+
+============================== 19:17:28.393737 | cdc557cf-a995-4226-8b4d-3e84642f5f04 ==============================
+[0m19:17:28.393737 [info ] [MainThread]: Running with dbt=1.8.1
+[0m19:17:28.400557 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/coder/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select obt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:17:28.763452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6c4d6e40>]}
+[0m19:17:28.874716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6ca8aab0>]}
+[0m19:17:28.875603 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m19:17:29.271745 [debug] [MainThread]: checksum: ebc509fb14e151ea268e89b60fd5abf912ed99129f87516462718fa2f14f4838, vars: {}, profile: , target: , version: 1.8.1
+[0m19:17:29.469759 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:17:29.470306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6ce5d160>]}
+[0m19:17:33.623719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6b5ccec0>]}
+[0m19:17:33.971051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6b0d87d0>]}
+[0m19:17:33.971698 [info ] [MainThread]: Found 8 models, 12 data tests, 664 macros
+[0m19:17:33.978612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6b5f54c0>]}
+[0m19:17:33.987538 [info ] [MainThread]: 
+[0m19:17:33.992730 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:17:33.999721 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m19:17:34.039704 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m19:17:34.040191 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m19:17:34.047177 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:17:34.094871 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.048 seconds
+[0m19:17:34.096417 [debug] [ThreadPool]: On list_postgres: Close
+[0m19:17:34.102201 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres, now create_postgres_classicmodels_obt)
+[0m19:17:34.108228 [debug] [ThreadPool]: Creating schema "database: "postgres"
+schema: "classicmodels_obt"
+"
+[0m19:17:34.120182 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_obt"
+[0m19:17:34.121282 [debug] [ThreadPool]: On create_postgres_classicmodels_obt: BEGIN
+[0m19:17:34.127864 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:17:34.171268 [debug] [ThreadPool]: SQL status: BEGIN in 0.043 seconds
+[0m19:17:34.171771 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_obt"
+[0m19:17:34.178827 [debug] [ThreadPool]: On create_postgres_classicmodels_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "create_postgres_classicmodels_obt"} */
+create schema if not exists "classicmodels_obt"
+[0m19:17:34.188178 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.002 seconds
+[0m19:17:34.193320 [debug] [ThreadPool]: On create_postgres_classicmodels_obt: COMMIT
+[0m19:17:34.198939 [debug] [ThreadPool]: Using postgres connection "create_postgres_classicmodels_obt"
+[0m19:17:34.205589 [debug] [ThreadPool]: On create_postgres_classicmodels_obt: COMMIT
+[0m19:17:34.214705 [debug] [ThreadPool]: SQL status: COMMIT in 0.003 seconds
+[0m19:17:34.218440 [debug] [ThreadPool]: On create_postgres_classicmodels_obt: Close
+[0m19:17:34.229722 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_postgres_classicmodels_obt, now list_postgres_classicmodels_star_schema)
+[0m19:17:34.238027 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:17:34.238451 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: BEGIN
+[0m19:17:34.245167 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:17:34.290859 [debug] [ThreadPool]: SQL status: BEGIN in 0.046 seconds
+[0m19:17:34.291342 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:17:34.298283 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_star_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_star_schema'
+  
+[0m19:17:34.309854 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.004 seconds
+[0m19:17:34.312933 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: ROLLBACK
+[0m19:17:34.320074 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: Close
+[0m19:17:34.325253 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_star_schema, now list_postgres_classicmodels_obt)
+[0m19:17:34.334250 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_obt"
+[0m19:17:34.338583 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: BEGIN
+[0m19:17:34.345194 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:17:34.391868 [debug] [ThreadPool]: SQL status: BEGIN in 0.047 seconds
+[0m19:17:34.392357 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_obt"
+[0m19:17:34.399372 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_obt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_obt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_obt'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_obt'
+  
+[0m19:17:34.410887 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.005 seconds
+[0m19:17:34.413314 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: ROLLBACK
+[0m19:17:34.421564 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: Close
+[0m19:17:34.432390 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:34.433818 [debug] [MainThread]: On master: BEGIN
+[0m19:17:34.440895 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:17:34.480629 [debug] [MainThread]: SQL status: BEGIN in 0.040 seconds
+[0m19:17:34.481118 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:34.487710 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:17:34.498452 [debug] [MainThread]: SQL status: SELECT 0 in 0.005 seconds
+[0m19:17:34.501265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6c4aed50>]}
+[0m19:17:34.507386 [debug] [MainThread]: On master: ROLLBACK
+[0m19:17:34.516359 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:34.521053 [debug] [MainThread]: On master: BEGIN
+[0m19:17:34.531610 [debug] [MainThread]: SQL status: BEGIN in 0.004 seconds
+[0m19:17:34.534216 [debug] [MainThread]: On master: COMMIT
+[0m19:17:34.541241 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:34.548163 [debug] [MainThread]: On master: COMMIT
+[0m19:17:34.556207 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:17:34.561787 [debug] [MainThread]: On master: Close
+[0m19:17:34.568762 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:17:34.575324 [info ] [MainThread]: 
+[0m19:17:34.584509 [debug] [Thread-1 (]: Began running node model.classicmodels_modeling.orders_obt
+[0m19:17:34.589016 [info ] [Thread-1 (]: 1 of 1 START sql table model classicmodels_obt.orders_obt ...................... [RUN]
+[0m19:17:34.595804 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_obt, now model.classicmodels_modeling.orders_obt)
+[0m19:17:34.602518 [debug] [Thread-1 (]: Began compiling node model.classicmodels_modeling.orders_obt
+[0m19:17:34.623376 [debug] [Thread-1 (]: Writing injected SQL for node "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.648334 [debug] [Thread-1 (]: Began executing node model.classicmodels_modeling.orders_obt
+[0m19:17:34.687966 [debug] [Thread-1 (]: Writing runtime sql for node "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.713823 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.714327 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: BEGIN
+[0m19:17:34.721557 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:17:34.768129 [debug] [Thread-1 (]: SQL status: BEGIN in 0.046 seconds
+[0m19:17:34.768667 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.776333 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.orders_obt"} */
+
+  
+    
+
+  create  table "postgres"."classicmodels_obt"."orders_obt__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT
+    orderdetails.orderNumber as order_number,
+    orderdetails.orderLineNumber as order_line_number,
+    products.productName as product_name,
+    products.productScale as product_scale,
+    products.productVendor as product_vendor,
+    products.productDescription as product_description,
+    products.buyPrice as product_buy_price,
+    products.MSRP as product_msrp,
+    productlines.textDescription as product_line,
+    orderdetails.quantityOrdered as quantity_ordered,
+    orderdetails.priceEach as product_price,
+    orders.orderDate as order_date,
+    orders.requiredDate as order_required_date,
+    orders.shippedDate as order_shipped_date,
+    customers.customerName as customer_name,
+    customers.city as customer_city,
+    customers.state as customer_state,
+    customers.postalCode as customer_postal_code,
+    customers.creditLimit as customer_credit_limit,
+    employees.firstName as sales_rep_first_name,
+    employees.lastName as sales_rep_last_name,
+    employees.jobTitle as sales_rep_title,
+    orders.status as order_status,
+    orders.comments as order_comments
+FROM classicmodels.orderdetails
+JOIN classicmodels.orders ON orderdetails.orderNumber =  orders.orderNumber
+JOIN classicmodels.products ON orderdetails.productCode =  products.productCode
+JOIN classicmodels.productlines ON products.productLine =  productlines.productLine
+JOIN classicmodels.customers ON orders.customerNumber =  customers.customerNumber
+JOIN classicmodels.employees ON customers.salesRepEmployeeNumber =  employees.employeeNumber
+  );
+  
+[0m19:17:34.802948 [debug] [Thread-1 (]: SQL status: SELECT 2996 in 0.019 seconds
+[0m19:17:34.809938 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.810391 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.orders_obt"} */
+alter table "postgres"."classicmodels_obt"."orders_obt__dbt_tmp" rename to "orders_obt"
+[0m19:17:34.819909 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m19:17:34.842684 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: COMMIT
+[0m19:17:34.843167 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.850610 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: COMMIT
+[0m19:17:34.920680 [debug] [Thread-1 (]: SQL status: COMMIT in 0.063 seconds
+[0m19:17:34.927861 [debug] [Thread-1 (]: Applying DROP to: "postgres"."classicmodels_obt"."orders_obt__dbt_backup"
+[0m19:17:34.933429 [debug] [Thread-1 (]: Using postgres connection "model.classicmodels_modeling.orders_obt"
+[0m19:17:34.935547 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "model.classicmodels_modeling.orders_obt"} */
+drop table if exists "postgres"."classicmodels_obt"."orders_obt__dbt_backup" cascade
+[0m19:17:34.944853 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.002 seconds
+[0m19:17:34.951660 [debug] [Thread-1 (]: On model.classicmodels_modeling.orders_obt: Close
+[0m19:17:34.957316 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cdc557cf-a995-4226-8b4d-3e84642f5f04', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6db95b50>]}
+[0m19:17:34.963615 [info ] [Thread-1 (]: 1 of 1 OK created sql table model classicmodels_obt.orders_obt ................. [[32mSELECT 2996[0m in 0.36s]
+[0m19:17:34.970249 [debug] [Thread-1 (]: Finished running node model.classicmodels_modeling.orders_obt
+[0m19:17:34.978072 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:34.983842 [debug] [MainThread]: On master: BEGIN
+[0m19:17:34.990728 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:17:35.037091 [debug] [MainThread]: SQL status: BEGIN in 0.046 seconds
+[0m19:17:35.037586 [debug] [MainThread]: On master: COMMIT
+[0m19:17:35.045007 [debug] [MainThread]: Using postgres connection "master"
+[0m19:17:35.052077 [debug] [MainThread]: On master: COMMIT
+[0m19:17:35.060770 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:17:35.065901 [debug] [MainThread]: On master: Close
+[0m19:17:35.073615 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:17:35.080467 [debug] [MainThread]: Connection 'model.classicmodels_modeling.orders_obt' was properly closed.
+[0m19:17:35.087494 [info ] [MainThread]: 
+[0m19:17:35.094361 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.09 seconds (1.09s).
+[0m19:17:35.102429 [debug] [MainThread]: Command end result
+[0m19:17:35.230128 [info ] [MainThread]: 
+[0m19:17:35.230738 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:17:35.237589 [info ] [MainThread]: 
+[0m19:17:35.244851 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m19:17:35.252611 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.970884, "process_user_time": 3.887355, "process_kernel_time": 0.193708, "process_mem_max_rss": "108636", "process_in_blocks": "41343", "process_out_blocks": "5160"}
+[0m19:17:35.258964 [debug] [MainThread]: Command `dbt run` succeeded at 19:17:35.258824 after 6.98 seconds
+[0m19:17:35.265664 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6e04a0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6c4d4200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7b6c954050>]}
+[0m19:17:35.272664 [debug] [MainThread]: Flushing usage events
+[0m19:20:08.009256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84fa62c830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8cedd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8cede20>]}
+
+
+============================== 19:20:08.054508 | 9183eaf3-9c78-4d67-9b20-d5fb75066bc2 ==============================
+[0m19:20:08.054508 [info ] [MainThread]: Running with dbt=1.8.1
+[0m19:20:08.062196 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/coder/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/coder/project/classicmodels_modeling/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt test -s obt', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:20:08.377043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8c93350>]}
+[0m19:20:08.486721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8d7a0c0>]}
+[0m19:20:08.487596 [info ] [MainThread]: Registered adapter: postgres=1.8.1
+[0m19:20:08.788784 [debug] [MainThread]: checksum: ebc509fb14e151ea268e89b60fd5abf912ed99129f87516462718fa2f14f4838, vars: {}, profile: , target: , version: 1.8.1
+[0m19:20:09.525643 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m19:20:09.526598 [debug] [MainThread]: Partial parsing: updated file: classicmodels_modeling://models/obt/schema.yml
+[0m19:20:10.441644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f7799eb0>]}
+[0m19:20:10.692267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f75f3e90>]}
+[0m19:20:10.692881 [info ] [MainThread]: Found 8 models, 13 data tests, 664 macros
+[0m19:20:10.700703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8fe99d0>]}
+[0m19:20:10.709877 [info ] [MainThread]: 
+[0m19:20:10.715485 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:20:10.726479 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_classicmodels_star_schema'
+[0m19:20:10.766635 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:20:10.767101 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: BEGIN
+[0m19:20:10.774614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:20:10.820964 [debug] [ThreadPool]: SQL status: BEGIN in 0.046 seconds
+[0m19:20:10.821464 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_star_schema"
+[0m19:20:10.828866 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_star_schema"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_star_schema'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_star_schema'
+  
+[0m19:20:10.840548 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.004 seconds
+[0m19:20:10.844780 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: ROLLBACK
+[0m19:20:10.851937 [debug] [ThreadPool]: On list_postgres_classicmodels_star_schema: Close
+[0m19:20:10.858124 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_star_schema, now list_postgres_classicmodels_obt)
+[0m19:20:10.866896 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_obt"
+[0m19:20:10.871883 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: BEGIN
+[0m19:20:10.879289 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m19:20:10.918331 [debug] [ThreadPool]: SQL status: BEGIN in 0.039 seconds
+[0m19:20:10.918857 [debug] [ThreadPool]: Using postgres connection "list_postgres_classicmodels_obt"
+[0m19:20:10.926153 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "list_postgres_classicmodels_obt"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'classicmodels_obt'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'classicmodels_obt'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'classicmodels_obt'
+  
+[0m19:20:10.938133 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.005 seconds
+[0m19:20:10.940983 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: ROLLBACK
+[0m19:20:10.948750 [debug] [ThreadPool]: On list_postgres_classicmodels_obt: Close
+[0m19:20:10.959219 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:10.961404 [debug] [MainThread]: On master: BEGIN
+[0m19:20:10.968397 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:20:11.018812 [debug] [MainThread]: SQL status: BEGIN in 0.050 seconds
+[0m19:20:11.019289 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:11.026776 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:20:11.038815 [debug] [MainThread]: SQL status: SELECT 0 in 0.005 seconds
+[0m19:20:11.041889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9183eaf3-9c78-4d67-9b20-d5fb75066bc2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f8b43e30>]}
+[0m19:20:11.047774 [debug] [MainThread]: On master: ROLLBACK
+[0m19:20:11.056572 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:11.061881 [debug] [MainThread]: On master: BEGIN
+[0m19:20:11.072523 [debug] [MainThread]: SQL status: BEGIN in 0.003 seconds
+[0m19:20:11.076249 [debug] [MainThread]: On master: COMMIT
+[0m19:20:11.088272 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:11.095555 [debug] [MainThread]: On master: COMMIT
+[0m19:20:11.105269 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:20:11.110089 [debug] [MainThread]: On master: Close
+[0m19:20:11.116960 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:20:11.123695 [info ] [MainThread]: 
+[0m19:20:11.133278 [debug] [Thread-1 (]: Began running node test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f
+[0m19:20:11.138865 [info ] [Thread-1 (]: 1 of 1 START test dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number  [RUN]
+[0m19:20:11.146345 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_postgres_classicmodels_obt, now test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f)
+[0m19:20:11.154654 [debug] [Thread-1 (]: Began compiling node test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f
+[0m19:20:11.172531 [debug] [Thread-1 (]: Writing injected SQL for node "test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f"
+[0m19:20:11.199016 [debug] [Thread-1 (]: Began executing node test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f
+[0m19:20:11.265539 [debug] [Thread-1 (]: Writing runtime sql for node "test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f"
+[0m19:20:11.291617 [debug] [Thread-1 (]: Using postgres connection "test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f"
+[0m19:20:11.292136 [debug] [Thread-1 (]: On test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f: BEGIN
+[0m19:20:11.299515 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m19:20:11.349350 [debug] [Thread-1 (]: SQL status: BEGIN in 0.050 seconds
+[0m19:20:11.349902 [debug] [Thread-1 (]: Using postgres connection "test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f"
+[0m19:20:11.357096 [debug] [Thread-1 (]: On test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f: /* {"app": "dbt", "dbt_version": "1.8.1", "profile_name": "classicmodels_modeling", "target_name": "dev", "node_id": "test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+
+
+
+
+with validation_errors as (
+
+    select
+        order_number, order_line_number
+    from "postgres"."classicmodels_obt"."orders_obt"
+    group by order_number, order_line_number
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+      
+    ) dbt_internal_test
+[0m19:20:11.372143 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.008 seconds
+[0m19:20:11.376782 [debug] [Thread-1 (]: On test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f: ROLLBACK
+[0m19:20:11.381322 [debug] [Thread-1 (]: On test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f: Close
+[0m19:20:11.386893 [info ] [Thread-1 (]: 1 of 1 PASS dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number  [[32mPASS[0m in 0.24s]
+[0m19:20:11.393598 [debug] [Thread-1 (]: Finished running node test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f
+[0m19:20:11.400881 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:11.407042 [debug] [MainThread]: On master: BEGIN
+[0m19:20:11.415159 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m19:20:11.460210 [debug] [MainThread]: SQL status: BEGIN in 0.045 seconds
+[0m19:20:11.460704 [debug] [MainThread]: On master: COMMIT
+[0m19:20:11.467936 [debug] [MainThread]: Using postgres connection "master"
+[0m19:20:11.474936 [debug] [MainThread]: On master: COMMIT
+[0m19:20:11.483816 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m19:20:11.489079 [debug] [MainThread]: On master: Close
+[0m19:20:11.496743 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:20:11.503633 [debug] [MainThread]: Connection 'test.classicmodels_modeling.dbt_utils_unique_combination_of_columns_orders_obt_order_number__order_line_number.a8b664736f' was properly closed.
+[0m19:20:11.511086 [info ] [MainThread]: 
+[0m19:20:11.518262 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 0.80 seconds (0.80s).
+[0m19:20:11.526355 [debug] [MainThread]: Command end result
+[0m19:20:11.761791 [info ] [MainThread]: 
+[0m19:20:11.762353 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m19:20:11.769838 [info ] [MainThread]: 
+[0m19:20:11.776734 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m19:20:11.784267 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 3.8851123, "process_user_time": 2.502843, "process_kernel_time": 0.195476, "process_mem_max_rss": "110240", "process_in_blocks": "43289", "process_out_blocks": "4928"}
+[0m19:20:11.790822 [debug] [MainThread]: Command `dbt test` succeeded at 19:20:11.790682 after 3.89 seconds
+[0m19:20:11.797778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84fa62c830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f69666f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c84f6966930>]}
+[0m19:20:11.804799 [debug] [MainThread]: Flushing usage events
